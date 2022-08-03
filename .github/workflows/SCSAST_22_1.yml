@@ -32,6 +32,11 @@ jobs:
         with:
           java-version: 1.8
 
+      # Adding host IP to /etc/hosts
+      - name: Add hosts
+        run: | 
+          sudo echo "34.204.203.136 fortify.cyberxdemo.com" | sudo tee -a /etc/hosts
+
       ### Set up Fortify ScanCentral Client ###
       - name: Download Fortify ScanCentral Client
         uses: fortify/gha-setup-scancentral-client@v1   
