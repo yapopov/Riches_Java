@@ -35,7 +35,7 @@ jobs:
       # Adding host IP to /etc/hosts
       - name: Add hosts
         run: | 
-          sudo echo "34.204.203.136 fortify.cyberxdemo.com" | sudo tee -a /etc/hosts
+          sudo echo "18.207.237.86 fortify.cyberxdemo.com" | sudo tee -a /etc/hosts
 
       ### Set up Fortify ScanCentral Client ###
       - name: Download Fortify ScanCentral Client
